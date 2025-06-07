@@ -7,6 +7,8 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
+import { NavLink } from "react-router";
+
 export default function Home() {
   return (
     <main className="container flex justify-between items-center gap-4">
@@ -20,7 +22,9 @@ export default function Home() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <Button variant={"outline"}>Abrir calculadora</Button>
+          <NavLink to={"/intervaloConfianca"}>
+            <Button variant={"outline"}>Abrir calculadora</Button>
+          </NavLink>
         </CardContent>
       </Card>
 
@@ -34,7 +38,9 @@ export default function Home() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <Button variant={"outline"}>Abrir calculadora</Button>
+          <NavLink to={"/tamanhoAmostra"}>
+            <Button variant={"outline"}>Abrir calculadora</Button>
+          </NavLink>
         </CardContent>
       </Card>
     </main>
