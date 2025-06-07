@@ -88,10 +88,13 @@ export default function IntervaloConfianca() {
                   </DropdownMenuContent>
                 </DropdownMenu>
 
-                <div id="erro-proporcao">
-                  <p className="font-bold text-primary">Erro de Proporção: </p>
-                </div>
+                <p className="font-bold text-primary">Erro de Proporção: </p>
+                <div id="erro-proporcao"></div>
               </div>
+              <p className="text-primary font-bold mt-4">
+                Intervalo de Confiança:
+              </p>
+              <div id="resultado"></div>
             </div>
           </div>
           <DialogFooter className="sm:justify-start"></DialogFooter>
